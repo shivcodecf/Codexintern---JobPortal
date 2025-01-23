@@ -14,6 +14,7 @@ const app = express();
 
 
 app.use(express.json());
+app.use(cookieParser()); // Parse cookies into req.cookies
 app.use(express.urlencoded({extended:true}));
 
 
